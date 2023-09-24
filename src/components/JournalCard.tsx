@@ -22,7 +22,11 @@ export const JournalCard = ({
           } collapse`}
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          <div className="collapse-title text-xl font-bold">{note.title}</div>
+          <div className="flex justify-between px-4 text-xl font-bold">
+          
+          <h1>{note.title}</h1>
+          <h1>{note.createdAt.toString().slice(4,15)}</h1>
+          </div>
           <div className="collapse-content">
             <article className="prose lg:prose-xl">
               <ReactMarkdown>{note.content}</ReactMarkdown>

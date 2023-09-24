@@ -2,6 +2,7 @@ import { useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
+import { useRouter } from "next/router";
 
 export const JournalEditor = ({
   onSave,
@@ -10,6 +11,8 @@ export const JournalEditor = ({
 }) => {
   const [code, setCode] = useState<string>("");
   const [title, setTitle] = useState<string>("");
+
+  const router = useRouter()
 
   return (
     <div className="card mt-5 border border-gray-200 bg-base-100 shadow-xl">
@@ -45,6 +48,7 @@ export const JournalEditor = ({
             });
             setCode("");
             setTitle("");
+            router.push("/journal");
           }}
           className="btn btn-primary mb-4 mr-4"
           disabled={title.trim().length === 0 || code.trim().length === 0}
