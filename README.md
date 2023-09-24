@@ -1,32 +1,22 @@
-# Create T3 App
+# Journal-T3
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Deployed Link: https://journal-t3-pxmq-r05wul6vt-longnphan.vercel.app/
 
-# Getting an OAuth Client ID
+## Technologies Used
 
-Here is how you get and [OAuth Client ID](https://scribehow.com/shared/Github_Workflow_to_create_OAuth_tokens__O_H4oeqRQzaubnFP_99aKg)
-
-## What's next? How do I make an app with this?
-
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
+- [TypeScript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
+- [NextAuth.js w/ GitHub](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
+- [DaisyUI](https://https://daisyui.com/)
 - [tRPC](https://trpc.io)
+- [Supabase](https://supabase.com/)
 
-## Learn More
+## Introduction
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+I wanted to learn Next.js and Prisma, so I decided to give the T3 stack a try. I rebuilt the journal functionality of a project that I had previously built using the MERN stack to compare the differences between the two stacks, https://github.com/longnphan/journaljournal . I used JSON Web Tokens on the MERN stack version and it was a nice change of pace to use NextAuth.js to allow users to be able to log into this app with their GitHub account. So far, the T3 stack has been easier to work with and I look forward to using it in future projects.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+<img width="1000" alt="app screenshot" src="https://github.com/longnphan/journal-t3/assets/67768035/eecc04a3-f442-4426-aa10-6c1ab5827596">
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+<img width="1000" alt="app screenshot" src="https://github.com/longnphan/journal-t3/assets/67768035/10e9ecc1-3e10-4e89-b7ad-f41260761793">
