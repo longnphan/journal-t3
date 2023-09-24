@@ -5,6 +5,7 @@ import { JournalEditor } from "../../components/JournalEditor";
 
 const EntriesPage: NextPage = () => {
   const { data: sessionData } = useSession();
+  const { refetch: refetchNotes } = api.note.getAll.useQuery({});
 
   const createNote = api.note.create.useMutation({
     onSuccess: () => {
