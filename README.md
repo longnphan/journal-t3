@@ -15,7 +15,16 @@
 
 ## Introduction
 
-I wanted to learn Next.js and Prisma, so I decided to give the T3 stack a try. I rebuilt the journal functionality of a project that I had previously built using the MERN stack to compare the differences between the two stacks, https://github.com/longnphan/journaljournal . I used JSON Web Tokens on the MERN stack version and it was a nice change of pace to use NextAuth.js to allow users to be able to log into this app with their GitHub account. So far, the T3 stack has been easier to work with and I look forward to using it in future projects.
+I wanted to learn Next.js and Prisma, so I experimented with the T3 stack by rebuilding the journal functionality of a previous MERN project that I had built, https://github.com/longnphan/journaljournal . This allowed me to compare the two stacks. 
+
+Some notable changes are:
+- I used TypeScript instead of JavaScript.
+- I used NextAuth.js for authentication instead of JSON Web Tokens.
+- I used a SQL Database, Supabase with Prisma ORM instead of MongoDB w/ Mongoose.
+- I used DaisyUI instead of Material Tailwind for styling.
+- I deployed to Vercel instead of using [Render](https://render.com/)
+
+Overall, the T3 stack has been fun to work with and I'm excited to use it in future projects.
 
 <img width="1000" alt="app screenshot" src="https://github.com/longnphan/journal-t3/assets/67768035/eecc04a3-f442-4426-aa10-6c1ab5827596">
 
