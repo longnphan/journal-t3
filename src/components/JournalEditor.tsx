@@ -12,7 +12,7 @@ export const JournalEditor = ({
   const [code, setCode] = useState<string>("");
   const [title, setTitle] = useState<string>("");
 
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <div className="card mt-5 border border-gray-200 bg-base-100 shadow-xl">
@@ -48,7 +48,7 @@ export const JournalEditor = ({
             });
             setCode("");
             setTitle("");
-            router.push("/journal");
+            void router.push("/journal");
           }}
           className="btn btn-primary mb-4 mr-4"
           disabled={title.trim().length === 0 || code.trim().length === 0}
