@@ -1,6 +1,6 @@
 # Journal-T3
 
-## Deployed Link: https://journal-t3-pxmq-r05wul6vt-longnphan.vercel.app/
+## Deployed Link: https://journal-t3-pxmq.vercel.app/
 
 ## Technologies Used
 
@@ -15,9 +15,10 @@
 
 ## Introduction
 
-I wanted to learn Next.js and Prisma, so I experimented with the T3 stack by rebuilding the journal functionality of a previous MERN project that I had built, https://github.com/longnphan/journaljournal . This allowed me to compare the two stacks. 
+I wanted to learn Next.js and Prisma, so I experimented with the T3 stack by rebuilding the journal functionality of a previous MERN project that I had built, https://github.com/longnphan/journaljournal . This allowed me to compare the two stacks.
 
 Some notable changes are:
+
 - I used TypeScript instead of JavaScript.
 - I used NextAuth.js for authentication instead of JSON Web Tokens.
 - I used a SQL Database, Supabase with Prisma ORM instead of MongoDB w/ Mongoose.
