@@ -14,7 +14,7 @@ const EntriesPage: NextPage = () => {
   });
 
   return (
-    <div className="mx-auto w-3/5">
+    <div className="mx-auto w-96 md:w-3/5">
       {sessionData && (
         <JournalEditor
           onSave={({ title, content }) => {

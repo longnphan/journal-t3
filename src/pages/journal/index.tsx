@@ -14,7 +14,7 @@ export default function Journal() {
   return (
     <>
     <Header />
-    <div className="mx-auto w-3/5">
+    <div className="mx-auto w-96 md:w-3/5">
       <div>
         {notes?.map((note) => (
           <div key={note.id} className="mt-5">
