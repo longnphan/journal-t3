@@ -3,6 +3,7 @@ import {
   BookOpenIcon,
   PencilIcon,
   PencilSquareIcon,
+  PowerIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -78,12 +79,24 @@ export const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="flex-none cursor-pointer gap-2">
+        <div className="flex-none gap-2">
           {sessionData?.user ? (
-            <div className="flex gap-2 pr-2" onClick={() => void signOut()}>
-              <UserCircleIcon className="h-7 w-7" />
-
-              <h1 className="text-xl">{sessionData?.user?.name}</h1>
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="flex cursor-pointer gap-1 pr-2">
+                <UserCircleIcon className="h-7 w-7" />
+                <h1 className="text-xl">{sessionData?.user?.name}</h1>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu-sm dropdown-content menu rounded-box z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+              >
+                <li>
+                  <div onClick={() => void signOut()}>
+                    <PowerIcon className="h-5 w-5" />
+                    <a>Logout</a>
+                  </div>
+                </li>
+              </ul>
             </div>
           ) : (
             <button
@@ -96,47 +109,5 @@ export const Header = () => {
         </div>
       </div>
     </div>
-
-    // <div className="navbar flex justify-between bg-primary text-primary-content">
-    //   <div className="gap-2 pl-2">
-    //     <PencilSquareIcon className="h-8 w-8" />
-    //     <h1 className="text-2xl">Journal</h1>
-    //   </div>
-
-    //   {sessionData?.user && (
-    //     <div className="flex">
-
-    //       <Link href="/" className="flex gap-1">
-    //       <PencilIcon className="h-5 w-5" />
-    //         <h1 className="cursor-pointer">Create Entry</h1>
-    //       </Link>
-
-    //       <Link href="/journal" className="flex gap-1 pl-6">
-    //       <BookOpenIcon className="h-6 w-6" />
-    //         <h1 className="cursor-pointer">Entries</h1>
-    //       </Link>
-
-    //     </div>
-    //   )}
-
-    //   <div className="flex-none gap-2">
-    //     <div className="cursor-pointer">
-    //       {sessionData?.user ? (
-    //         <div className="flex gap-2 pr-2" onClick={() => void signOut()}>
-    //           <UserCircleIcon className="h-8 w-8" />
-
-    //           <h1 className="text-xl">{sessionData?.user?.name}</h1>
-    //         </div>
-    //       ) : (
-    //         <button
-    //           className="btn btn-ghost rounded-btn"
-    //           onClick={() => void signIn()}
-    //         >
-    //           Sign in
-    //         </button>
-    //       )}
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
