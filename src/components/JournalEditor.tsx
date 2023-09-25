@@ -28,9 +28,9 @@ export const JournalEditor = ({
         </h2>
         <CodeMirror
           value={code}
-          width="500px"
+          width="100%"
           height="30vh"
-          minWidth="100%"
+          minWidth="96px"
           minHeight="30vh"
           extensions={[
             markdown({ base: markdownLanguage, codeLanguages: languages }),
